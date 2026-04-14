@@ -296,7 +296,11 @@ export function HomePage({ setActivePage }) {
                   e.currentTarget.style.borderColor = COLORS.GRAY_LIGHT;
                 }}
               >
-                <div style={{ fontSize: 32, marginBottom: 20 }}>{s.icon}</div>
+                <img 
+                  src={s.icon} 
+                  alt={s.name}
+                  style={{ width: 32, height: 32, marginBottom: 20, objectFit: "contain" }} 
+                />
                 <h3
                   style={{
                     fontFamily: FONTS.SERIF,
