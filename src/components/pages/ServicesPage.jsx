@@ -78,7 +78,15 @@ export function ServicesPage({ setActivePage }) {
                     marginBottom: 24,
                   }}
                 >
-                  <span style={{ fontSize: 36 }}>{s.icon}</span>
+                  {s.icon.startsWith('/') ? (
+                    <img
+                      src={s.icon}
+                      alt={s.name}
+                      style={{ width: 48, height: 48, objectFit: 'contain' }}
+                    />
+                  ) : (
+                    <span style={{ fontSize: 36 }}>{s.icon}</span>
+                  )}
                   <span
                     style={{
                       fontFamily: FONTS.SERIF,
