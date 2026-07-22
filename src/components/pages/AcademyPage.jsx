@@ -268,11 +268,12 @@ export function AcademyPage() {
               >
                 <div
                   style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: 20,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 22,
                   }}
                 >
+
                   <div>
                     <label
                       style={{

@@ -174,11 +174,12 @@ Looking forward to hearing from you!`;
             <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
               <div
                 style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
+                  display: "flex",
+                  flexDirection: "column",
                   gap: 22,
                 }}
               >
+
                 <div>
                   {inputLabel("Full Name", true)}
                   <input
@@ -234,11 +235,12 @@ Looking forward to hearing from you!`;
 
               <div
                 style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
+                  display: "flex",
+                  flexDirection: "column",
                   gap: 22,
                 }}
               >
+
                 <div>
                   {inputLabel("Preferred Date", true)}
                   <input
@@ -332,7 +334,7 @@ Looking forward to hearing from you!`;
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }
